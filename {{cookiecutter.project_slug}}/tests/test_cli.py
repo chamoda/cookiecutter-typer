@@ -1,6 +1,6 @@
 from typer.testing import CliRunner
 
-from python_cli_template.cli import app
+from {{ cookiecutter.app_slug }}.cli import app
 
 runner = CliRunner()
 
