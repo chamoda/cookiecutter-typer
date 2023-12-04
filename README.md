@@ -14,12 +14,12 @@ Modern cookiecutter template for python cli apps with,
 ## Requirements
 
 * Python 3.10 or greater.
-* Poetry and Pipx
+* Pipx (install [instructions](https://pipx.pypa.io/stable/installation)).
 
 ## Installation
 
-* Install poetry,
-* Intall `cookiecutter` using `pipx`. Here's install [instructions](https://pipx.pypa.io/stable/installation).
+* Intall `cookiecutter` using `pipx install cookiecutter`.
+* Install `poetry` using `pipx install poetry`.
 * Run `cookiecutter https://github.com/chamoda/cookiecutter-typer.git` to create a new project from template.
 
 ## Getting started
@@ -27,9 +27,14 @@ Modern cookiecutter template for python cli apps with,
 After template created following steps gets you ups and running with the working cli app.
 
 * Create git repo inside the template with `git init && git add . && git commit -m "Init"`
-* Create a virtual enviroment with `python3 -m venv venv` and active it using `source venv/bin/active`
+* Create a virtual enviroment with `python3 -m venv venv` and active it using `source venv/bin/activate`
 * Go to newly create project directory and run `poetry install`
 * Run `pre-commit install` to install git hooks.
-* Run `cli-app` or equalant name you used for `app-slug` to run cli.
+* Run `cli-template` or equalant name you used for `app-slug` to run cli.
 * Run tests with `pytest`
+
+# Contributing
+
+* Clone this project
+* Run `cookiecutter PATH_TO_PROJECT --replay --overwrite-if-exists` rerun changes to project back into created template for testing.
 
